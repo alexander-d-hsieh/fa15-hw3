@@ -1,0 +1,15 @@
+Here are the users
+  <% @u.each do |x| %>
+    <%= "Username: "+ x.username + "Email: " + x.email %>
+    <% end %>
+
+Here are the cats
+<% @c.each do |x| %>
+  <%= "Name "+ x.name %>
+  <% end %>
+
+
+My todo List
+<% @t.each do |x| %>
+  <%= "What to do "+ x.title + "Due" + x.due.to_s %>
+  <% end %>
